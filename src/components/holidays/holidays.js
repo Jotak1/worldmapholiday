@@ -1,49 +1,27 @@
-  
+
 import React, { useEffect } from 'react';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
 
-import Fab from '@material-ui/core/Fab';
-
-function Holidays() {
+function Holidays(props) {
     const [result, setResult] = React.useState([]);
-    const [open, setOpen] = React.useState(false);
-    
-    const handleClickOpen = () => { 
-     
-        setOpen(true); 
-      };
-      const handleClose = () => {
-        setOpen(false);
-      };
-
-
+    const APIcountry = "https://date.nager.at/api/v2/publicholidays/";
+    var thisyear = new Date().getFullYear()
+    console.log(props);
+    useEffect(() => {
+        fetch(APIcountry+thisyear+"/"+props.Country )
+        .then((response) => response.json())
+        .then((data) =>  setResult(data))
+    })
     return (
         <div>
-            <Dialog
-                fullScreen
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="max-width-dialog-title"
-                PaperProps={{
-                    style: {
-                    backgroundColor: 'transparent',
-                    boxShadow: 'none',
-                    },
-                }}>
-                <DialogTitle id="max-width-dialog-title">
-                    <DialogActions>
-                        <Button onClick={handleClose} variant="contained" color="primary">
-                            <CloseIcon/>
-                        </Button>
-                    </DialogActions>
-                </DialogTitle>
-                <DialogContent>
-                    prueba
-                </DialogContent>
-            </Dialog>
+           
         </div>
     );
 }
+export default Holidays;

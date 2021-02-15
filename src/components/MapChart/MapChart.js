@@ -12,6 +12,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import { Button, DialogContentText } from "@material-ui/core";
 import Slide from '@material-ui/core/Slide';
+import Holidays from "../holidays/holidays";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -117,13 +118,11 @@ const MapChart = ({ setTooltipContent }) => {
         <DialogTitle id="max-width-dialog-title">
           
           <DialogContentText>
-              {valor1}
-          
-            
-            </DialogContentText>
+             Feriados de {valor1}
+          </DialogContentText>
         </DialogTitle>
         <DialogContent>
-            prueba
+            <Holidays Country={valor}/>
         </DialogContent>
         <DialogActions>
                 <Button onClick={handleClose} variant="contained" color="primary">
