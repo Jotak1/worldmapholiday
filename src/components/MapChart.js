@@ -6,17 +6,9 @@ import {
   Geography,
   Sphere,
 } from "react-simple-maps";
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import { Button, DialogContentText } from "@material-ui/core";
-import Slide from '@material-ui/core/Slide';
-import Holidays from "../holidays/holidays";
+import ModalDial from "./ModalDial";
 
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
+
 
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
@@ -102,35 +94,12 @@ const MapChart = ({ setTooltipContent }) => {
           </Geographies>
         </ZoomableGroup>
       </ComposableMap>
-      <Dialog
-        fullWidth= "true"
-        maxWidth="lg"
+      <ModalDial
         open={open}
-        onClose={handleClose}
-        aria-labelledby="max-width-dialog-title"
-        TransitionComponent={Transition}
-        PaperProps={{
-            style: {
-            backgroundColor: 'white',
-            boxShadow: 'none',
-            },
-        }}>
-        <DialogTitle id="max-width-dialog-title">
-          
-          <DialogContentText>
-             Feriados de {valor1}
-          </DialogContentText>
-        </DialogTitle>
-        <DialogContent>
-            <Holidays Country={valor}/>
-        </DialogContent>
-        <DialogActions>
-                <Button onClick={handleClose} variant="contained" color="primary">
-                    X
-                </Button>
-            </DialogActions>
-        
-      </Dialog>
+        handleClose={handleClose}
+        valor1={valor1}
+        valor={valor}
+        />
     </div>
   );
 };

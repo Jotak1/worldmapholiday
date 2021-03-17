@@ -1,7 +1,7 @@
 import React, {  useState } from "react";
 import ReactTooltip from "react-tooltip";
 
-import MapChart from "./components/MapChart/MapChart";
+import MapChart from "./components/MapChart";
 
 const App = () => {
   const [content, setContent] = useState("");
