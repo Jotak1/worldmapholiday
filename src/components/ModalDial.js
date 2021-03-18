@@ -31,7 +31,7 @@ const ModalDial = ({open,handleClose,valor1,valor}) => {
         <DialogTitle id="max-width-dialog-title">
           
           <DialogContentText>
-             Feriados de {valor1}
+          Holidays in {valor1}
           </DialogContentText>
         </DialogTitle>
         <DialogContent>

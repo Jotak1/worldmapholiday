@@ -25,14 +25,12 @@ const rounded = num => {
 
 const mapStyles = {
     width: "100%",
-    height: "auto",
+    height: "500px",
   };
 
-  
-// const projection = geoInterruptedMollweideHemispheres;
+
 
 const MapChart = ({ setTooltipContent }) => {
-  const [result, setResult] = React.useState([]);
   const [open, setOpen] = React.useState(false);
   const [valor, setValor] = React.useState([]);
   const [valor1, setValor1] = React.useState([]);
@@ -49,7 +47,7 @@ const MapChart = ({ setTooltipContent }) => {
     <div>
       <ComposableMap 
         data-tip="" 
-         projectionConfig={{ scale: 100}} style={mapStyles}>
+         projectionConfig={{ scale: 200}} style={mapStyles}>
         
         <ZoomableGroup>
         <Sphere stroke="#FF5533" strokeWidth={1} />

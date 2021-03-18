@@ -22,7 +22,7 @@ function Holidays({Country}) {
     const [result, setResult] = React.useState([]);
     const [loading, setLoading] = React.useState(true);
     const [error, setError] = React.useState(false);
-    const [errormsg, setErrorMsg] = React.useState('');
+    const [errormsg, setErrorMsg] = React.useState([]);
 
     const thisyear = new Date().getFullYear();
     const APIcountry =`https://date.nager.at/api/v2/publicholidays/${thisyear}/${Country}`;
@@ -38,7 +38,6 @@ function Holidays({Country}) {
                 setErrorMsg(err);
                 setError(true);
                  setLoading(false);
-                 console.log(errormsg);
             })
         
            
