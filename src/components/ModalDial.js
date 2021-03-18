@@ -15,7 +15,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const ModalDial = ({open,handleClose,valor1,valor}) => {
     return ( 
-
         <Dialog
         fullWidth={true}
         maxWidth="lg"

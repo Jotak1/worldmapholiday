@@ -69,7 +69,6 @@ const MapChart = ({ setTooltipContent }) => {
                   }}
                   onClick={() => {
                     const { NAME, ISO_A2 } = geo.properties;
-                    console.log(ISO_A2);
                     handleClickOpen(ISO_A2, NAME );
                   }}
                   style={{
