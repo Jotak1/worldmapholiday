@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/worldmapholiday/static/css/main.b0bcd4ec.chunk.css",
+    "main.js": "/worldmapholiday/static/js/main.da555750.chunk.js",
+    "main.js.map": "/worldmapholiday/static/js/main.da555750.chunk.js.map",
+    "runtime-main.js": "/worldmapholiday/static/js/runtime-main.fc533aad.js",
+    "runtime-main.js.map": "/worldmapholiday/static/js/runtime-main.fc533aad.js.map",
+    "static/js/2.559a6e53.chunk.js": "/worldmapholiday/static/js/2.559a6e53.chunk.js",
+    "static/js/2.559a6e53.chunk.js.map": "/worldmapholiday/static/js/2.559a6e53.chunk.js.map",
+    "static/js/3.6c87d584.chunk.js": "/worldmapholiday/static/js/3.6c87d584.chunk.js",
+    "static/js/3.6c87d584.chunk.js.map": "/worldmapholiday/static/js/3.6c87d584.chunk.js.map",
+    "index.html": "/worldmapholiday/index.html",
+    "static/css/main.b0bcd4ec.chunk.css.map": "/worldmapholiday/static/css/main.b0bcd4ec.chunk.css.map",
+    "static/js/2.559a6e53.chunk.js.LICENSE.txt": "/worldmapholiday/static/js/2.559a6e53.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc533aad.js",
+    "static/js/2.559a6e53.chunk.js",
+    "static/css/main.b0bcd4ec.chunk.css",
+    "static/js/main.da555750.chunk.js"
+  ]
+}
