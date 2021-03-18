@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/worldmapholiday/static/css/main.b0bcd4ec.chunk.css",
-    "main.js": "/worldmapholiday/static/js/main.da555750.chunk.js",
-    "main.js.map": "/worldmapholiday/static/js/main.da555750.chunk.js.map",
+    "main.js": "/worldmapholiday/static/js/main.6e4740f8.chunk.js",
+    "main.js.map": "/worldmapholiday/static/js/main.6e4740f8.chunk.js.map",
     "runtime-main.js": "/worldmapholiday/static/js/runtime-main.fc533aad.js",
     "runtime-main.js.map": "/worldmapholiday/static/js/runtime-main.fc533aad.js.map",
     "static/js/2.559a6e53.chunk.js": "/worldmapholiday/static/js/2.559a6e53.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.fc533aad.js",
     "static/js/2.559a6e53.chunk.js",
     "static/css/main.b0bcd4ec.chunk.css",
-    "static/js/main.da555750.chunk.js"
+    "static/js/main.6e4740f8.chunk.js"
   ]
 }
