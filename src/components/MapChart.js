@@ -25,7 +25,7 @@ const rounded = num => {
 
 const mapStyles = {
     width: "100%",
-    height: "500px",
+    height: '100%'
   };
 
 
@@ -44,10 +44,10 @@ const MapChart = ({ setTooltipContent }) => {
       setOpen(false);
     }; 
   return (
-    <div>
+    <div className='container'>
       <ComposableMap 
         data-tip="" 
-         projectionConfig={{ scale: 200}} style={mapStyles}>
+         projectionConfig={{ scale: 100}} style={mapStyles}>
         
         <ZoomableGroup>
         <Sphere stroke="#FF5533" strokeWidth={1} />

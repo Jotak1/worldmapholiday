@@ -22,3 +22,7 @@ code {
   padding: 10px;
   font-weight: bold;
 }
+
+.container{
+  height: 90vh;
+}

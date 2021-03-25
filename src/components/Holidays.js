@@ -28,19 +28,15 @@ function Holidays({Country}) {
     const APIcountry =`https://date.nager.at/api/v2/publicholidays/${thisyear}/${Country}`;
     useEffect(() => {
         const consultarApi = async () => {
-            await axios.get(APIcountry)
-            .then(response => {
-                setResult(response.data);
-                setLoading(false);
-            })
-            .catch(err => {
-                
-                setErrorMsg(err);
+            try {
+              const response =  await axios.get(`https://private-cors-jotak1.herokuapp.com/${APIcountry}`)
+              setResult(response.data);
+              setLoading(false);
+            } catch (error) {
+                setErrorMsg(error);
                 setError(true);
                  setLoading(false);
-            })
-        
-           
+            }
         };
         consultarApi();
     },[]);
